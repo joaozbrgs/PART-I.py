@@ -5,3 +5,5 @@ root = tk.Tk()
 label = tk.Label(root, text="Hello World!")
 
 label.pack()
+
+print(label)
