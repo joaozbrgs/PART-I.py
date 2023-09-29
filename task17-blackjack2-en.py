@@ -17,7 +17,7 @@ def dealer_play(deck,values):
     # Decision making loop, condition for the dealer to buy a new card or not
     while dealer_sum < 17:
         ncard = rd.choice(deck) #rd function do choose a random card from the deck, the difference from the sample is the amount of cards chosen
-        dealer_hand.append(ncard) #the .append was used to add the new card to the initial object (dealer_hand)
+        dealer_hand.append(ncard) #the .append was used to add the new card to the initial tuple (dealer_hand)
         dealer_sum += values.get(ncard,0) # the .get is used to retrieve the ncard value from the dictionary, and the += operation is responsible to add this value to the previous sum
 
     return dealer_hand, dealer_sum
